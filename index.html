@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+    <title>Biogen - Ignite Me Game</title>
+
+    <!-- externals styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.18/sweetalert2.css" integrity="sha512-K0TEY7Pji02TnO4NY04f+IU66vsp8z3ecHoID7y0FSVRJHdlaLp/TkhS5WDL3OygMkVns4bz0/ah4j8M3GgguA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- internal styles -->
+    <link rel="stylesheet" href="css/style.css?val=1" />
+</head>
+
+<body id="fullscreenElement">
+    <!-- toggle fullscreen button -->
+    <button id="toggleButton" onclick="toggleFullscreen()">
+        <i id="fullscreenIcon" class="fas fa-expand"></i>
+    </button>
+
+    <!-- start page -->
+    <div id="homePage" class="page">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-8 mx-auto">
+                <div class="box-content">
+                    <div class="top-logos my-3 py-3 d-flex justify-content-between align-items-center">
+                        <img src="images/company-logo.png" height="45" alt="" />
+                        <img src="images/product-logo.png" height="70" alt="" />
+                    </div>
+                    <h3 class="text-center my-5 text-white">Join The Battle – Defeat Dyslipidemia</h3>
+                    <form id="registerForm" class="row g-3">
+                        <div class="row mb-3">
+                            <label for="inputFullName" class="col-sm-2 col-form-label text-white">Full Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputFullName" placeholder="Enter Your Full Name" required="" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail" class="col-sm-2 col-form-label text-white">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter Your Email" required="" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button id="registerButton" type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end page -->
+
+    <!-- start page -->
+    <div id="instructionsPage" class="page">
+        <div id="startGameButton"></div>
+    </div>
+    <!-- end page -->
+
+    <!-- start page -->
+    <div id="gamePage" class="page">
+        <div id="gameContainer">
+            <div class="counter">Time
+                <br>
+                <span id="counter">00</span>
+            </div>
+            <div class="score">Score
+                <br>
+                <span class="points">00</span>
+            </div>
+            <!-- <div id="gloves" class="gloves">
+                <img id="glovesImage" src="images/glove.png" alt="" />
+            </div> -->
+        </div>
+    </div>
+    <!-- end page -->
+
+    <!-- start page -->
+    <div id="resultPage" class="page">
+        <h6 id="finalScore">00</h6>
+        <div id="restartGameButton"></div>
+    </div>
+    <!-- end page -->
+
+    <!-- externals scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.18/sweetalert2.min.js" integrity="sha512-w7iWPJKtRcGuYa3Q52yOCaCgu1VC0Xuza34spZheOpS94AbzOIr5RLCojyX/UlnG7aJuGhWnPBQUla9ikd1UoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js" integrity="sha512-eYSzo+20ajZMRsjxB6L7eyqo5kuXuS2+wEbbOkpaur+sA2shQameiJiWEzCIDwJqaB0a4a6tCuEvCOBHUg3Skg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- internal scripts -->
+    <script src="js/api.js?val=1"></script>
+    <script src="js/script.js?val=1"></script>
+</body>
+
+</html>

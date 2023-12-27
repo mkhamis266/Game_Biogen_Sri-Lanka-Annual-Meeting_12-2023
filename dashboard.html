@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imgs/fav.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/dashboard.css?val=2" />
+  <title>Biogen - Ignite Me Game</title>
+</head>
+
+<body class="dashboard">
+  <!-- preLoader -->
+  <div class="container pb-5">
+    <section class="mt-5">
+      <div class="row my-5">
+        <div class="col-12 text-center total">
+          <h4>LDL Game Dashboard</h4>
+        </div>
+      </div>
+      <div class="card card-height-100">
+        <div class="card-header align-items-center d-flex">
+          <h4 class="card-title mb-0 flex-grow-1">Players Scores</h4>
+          <div class="flex-shrink-0">
+            <button class="btn btn-success" onclick="download()">Download ExcelSheet</button>
+          </div>
+        </div>
+        <!-- end card header -->
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered table-nowrap align-middle mb-0 text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Full Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Operations</th>
+                </tr>
+              </thead>
+
+              <tbody class="results-container">
+                <tr id="emptyMessage" class="d-block">
+                  <td colspan="5">
+                    <h6 class="text-center">no data available</h6>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- end table -->
+          </div>
+          <!-- end table responsive -->
+        </div>
+        <!-- end card body -->
+      </div>
+      <!-- end card -->
+    </section>
+  </div>
+
+  <!-- use version 0.19.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.19.0/package/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js" integrity="sha512-eYSzo+20ajZMRsjxB6L7eyqo5kuXuS2+wEbbOkpaur+sA2shQameiJiWEzCIDwJqaB0a4a6tCuEvCOBHUg3Skg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/api.js?val=3"></script>
+  <script src="js/dashboard.js?val=1"></script>
+</body>
+
+</html>

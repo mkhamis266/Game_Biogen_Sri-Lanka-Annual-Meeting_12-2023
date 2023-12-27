@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+:root {
+    --main-color: #fceeb1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+}
+
+input {
+    -webkit-user-select: auto;
+}
+
+body {
+    font-family: 'Philosopher', sans-serif;
+}
+#toggleButton {
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    background: none;
+    border: 0;
+    color: #fff;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+/* home page */
+#homePage {
+    background-image: url(../images/home-bg.jpg);
+    display: block;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+.box-content {
+    background-color: #001932;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+    border-radius: 8px;
+    border-right: 1px solid var(--main-color);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 100px;
+    position: relative;
+    z-index: 1;
+    padding: 20px 30px;
+}
+
+.top-logos {
+    border-bottom: 2px solid var(--main-color);
+}
+
+#registerButton {
+    background-color: var(--main-color);
+    border: var(--main-color);
+    &:hover {
+        background-color: var(--main-color);
+        border: var(--main-color);
+    }
+    color: #001932;
+}
+
+.box-content .left-logo {
+    max-width: 160px;
+}
+
+.form-control {
+    background-color: #e6eff6;
+}
+
+/* instructions page */
+#instructionsPage{
+    background-image: url(../images/instructions-bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#startGameButton {
+    position: absolute;
+    left: 43%;
+    top: 83%;
+    width: 14%;
+    height: 11%;
+    cursor: pointer;
+}
+
+
+/* game view */
+
+#gamePage {
+    background-image: url("../images/bg.jpg");
+}
+#gameContainer{
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+.score {
+    position: absolute;
+    bottom: 0;
+    font-size: 2.5rem;
+    z-index: 200;
+    
+    color: #fceeb1;
+    user-select: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.score span {
+    color: #ffffff;
+}
+.box {
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    background-image: url('../images/object.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.move {
+    transform: translateY(-120vh);
+}
+
+.counter {
+      /* width: 100%; */
+    margin: 0 auto;
+    text-align: left;
+    
+    color: #fceeb1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 15px;
+    bottom: 0;
+}
+.counter span{
+    color: #ffffff;
+}
+
+/* .gloves {
+    z-index: 101;
+    position: absolute;
+    width: 10%;
+    left: 45%;
+    top: 80%;
+    transition: left 0.2s cubic-bezier(0.42, -0.3, 0.78, 1.25), top 0.2s cubic-bezier(0.42, -0.3, 0.78, 1.25);
+} */
+
+/* .gloves img {
+    width: 100%;
+} */
+
+/* .glove {
+    width: 100px;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    top: calc(50% - 50px);
+    z-index: 1000;
+} */
+
+/* #rightGlove {
+    left: calc(100% - 100px);
+} */
+
+/* #leftGlove {
+    right: calc(100% - 100px);
+} */
+
+/* .clicked {
+    transform: scale(1.2) !important;
+} */
+
+
+
+/* result page */
+#resultPage {
+    background-image: url(../images/result.jpg);
+}
+
+#finalScore {
+    position: absolute;
+    width: 13%;
+    left: 43%;
+    top: 43%;
+    color: #ffffff;
+    font-size: 110px;
+    text-align: center;
+    }
+
+#restartGameButton {
+    position: absolute;
+    left: 41%;
+    top: 83%;
+    width: 18%;
+    height: 12%;
+    cursor: pointer;
+}
+
